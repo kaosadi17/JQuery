@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+ 
+</head>
+ 
+<body>
+ 
+ 
+ 
+ 
+               
+        <div id="left">
+                <h2>Left Content Area</h2>
+                <p>This area will contain the left content area.  We will populate this area with images and text. </p>
+        </div>
+       
+        <div id="center">
+                <h2>Center Content Area</h2>
+                <p>This area will contain the center content area.  This area will contain the main articles. </p>
+        </div>
+ 
+        <div id="right">
+                <h2>Right Content Area</h2>
+                <p>This area will contain the right content area. We will populate this area with links and text.</p>
+               
+        </div>
+        <div id="test">
+                <button> Hit button to change something</button>
+               
+        </div>
+       
+ 
+ 
+ <script src="jquery-3.2.1.js"></script>
+ 
+    <script>
+        
+        $(document).ready(function(){
+            $("button").click(function(){
+                //$("#right").hide(); // hide the right section
+                //$("div:first").hide(); //hide the first div element
+                //$("div:not(#test)").hide(); // hide all the div except test
+                //$("#left p:first").hide(); //hide the first paragraph of left div
+                //$("div:even").hide(); // hide even no of div elements
+                //$("p").html("<p>My content<p>"); //all the paragrapghs are changed as my content
+                //$("p").text("My Content"); // all the paragrapgh contents are changed as my content
+                
+            });
+        
+        });
+        
+    </script>
+     
+</body>
+</html>
