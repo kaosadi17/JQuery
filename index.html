@@ -4,25 +4,32 @@
  
 <head>
     <link type="text/css" rel="stylesheet" href="style.css">
- 
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
 </head>
- 
 <body>
          
         <div id="left">
                 <h2>Left Content Area</h2>
                 <p>This area will contain the left content area.  We will populate this area with images and text. </p>
+                pick a travel date <input type = "text" id = "pickdate">
         </div>
        
         <div id="center">
                 <h2>Center Content Area</h2>
-                <p>This area will contain the center content area.  This area will contain the main articles. </p>
+               <!-- <p>This area will contain the center content area.  This area will contain the main articles. </p> -->
+                <ul>
+                    <li> item1 </li>
+                    <li> item2 </li>
+                    <li> item3 </li>
+                 </ul>
         </div>
  
         <div id="right">
                 <h2>Right Content Area</h2>
                 <p>This area will contain the right content area. We will populate this area with links and text.</p>
-                <img src = "bear2.jpg">
+                <img src = "bear2.jpg" title = "Teddy bear">
                
         </div>
         <div id="test">
@@ -31,11 +38,12 @@
         </div>
  
  <script src="jquery-3.2.1.js"></script>
+ <script src="jqueryui/jquery-ui.js"></script>
  
     <script>
         
         $(document).ready(function(){
-            /*$("button").click(function(){
+            $("button").click(function(){
                 //$("#right").hide(); // hide the right section
                 //$("div:first").hide(); //hide the first div element
                 //$("div:not(#test)").hide(); // hide all the div except test
@@ -58,22 +66,36 @@
                 //$("#right").remove();//remove the defined section
                 //$("img").attr("src", "bear1.jpg"); //add images to the page
                 
-            });*/
+                $("li").each(function(){
+                    $(this).html("<p> this para </p>")
+                
+                });
+                
+            });
+            
+            $("#pickdate").datepicker();
+            $("img").tooltip();
             
             /*$('button').mouseover(function(){
                 $("#right p").text("mouse over worked");
             
             });*/
             
-            $("img").hover(function(){
+            /*$("img").hover(function(){
                 $("div").css("background-color", "yellow");
             
             },
              function(){
                  $("div").css("background-color", "red");
-            });
+            });*/
+            
+            
         
         });
+        /*$("img").load(function(){
+            alert("alert message");
+        
+        });*/
         
     </script>
      
