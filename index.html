@@ -22,6 +22,7 @@
         <div id="right">
                 <h2>Right Content Area</h2>
                 <p>This area will contain the right content area. We will populate this area with links and text.</p>
+                <img src = "bear2.jpg">
                
         </div>
         <div id="test">
@@ -34,7 +35,7 @@
     <script>
         
         $(document).ready(function(){
-            $("button").click(function(){
+            /*$("button").click(function(){
                 //$("#right").hide(); // hide the right section
                 //$("div:first").hide(); //hide the first div element
                 //$("div:not(#test)").hide(); // hide all the div except test
@@ -52,7 +53,24 @@
                 //$("#right").append("<h2>this is header element</h2>"); // append the html content as last part of the div element
                 //$("#right").prepend("<h2>this is header element</h2>"); // append the html content as first part of the defined div element
                 //$("#right").after("<h2>this is header element</h2>");// append the html element after the defined div (not as part of it)
-                //$("#right").before("<h2>this is header element</h2>");
+                //$("#right").before("<h2>this is header element</h2>");// append the html element before the defined div (not as part of it)
+                //$("#right p").replaceWith("<p>replace paragraph </p>"); //replace the defined content with new content
+                //$("#right").remove();//remove the defined section
+                //$("img").attr("src", "bear1.jpg"); //add images to the page
+                
+            });*/
+            
+            /*$('button').mouseover(function(){
+                $("#right p").text("mouse over worked");
+            
+            });*/
+            
+            $("img").hover(function(){
+                $("div").css("background-color", "yellow");
+            
+            },
+             function(){
+                 $("div").css("background-color", "red");
             });
         
         });
