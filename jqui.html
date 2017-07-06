@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+<body>
+         
+        <div id="left">
+			<div id = "panels">
+				<h2>First Content</h2>
+				<div>
+                This is the first content area 
+            </div>	
+			<h2>Second Content</h2>
+				<div>
+                This is the second content area 
+            </div>	
+				<h2>Third Content</h2>
+				<div>
+                This is the third content area 
+            </div>	
+			</div>
+		</div>
+       
+       <!-- <div id="center">
+                <h2>Center Content Area</h2>
+                <p>This area will contain the center content area.  This area will contain the main articles. </p> 
+                <ul>
+                    <li> item1 </li>
+                    <li> item2 </li>
+                    <li> item3 </li>
+                 </ul>
+        </div> -->
+ 
+        <div id="right">
+                <h2>Right Content Area</h2>
+                <p>This area will contain the right content area. We will populate this area with links and text.</p>
+                <img src = "bear2.jpg" title = "Teddy bear">
+               
+        </div>
+        <div id="test">
+                <button> Hit button to change something</button>
+               
+        </div>
+ 
+ <script src="jquery-3.2.1.js"></script>
+ <script src="jqueryui/jquery-ui.js"></script>
+ 
+    <script>
+        
+        $(document).ready(function(){
+            
+         $("#panels").accordion();
+		$("#right").dialog();
+         $("img").draggable();
+         $("img").resizable();
+        
+        });
+        
+    </script>
+     
+</body>
+</html>
